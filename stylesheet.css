@@ -1,0 +1,33 @@
+.kaitoubutton_con {
+  width: 603px;
+  margin: auto;
+  height: 100px;
+}
+
+.kaitoubutton {
+  float: left;
+  width: 10.85%;
+  text-align: center;
+  line-height: 100px;
+  background: LightGray;
+  border: solid;
+  border-width: 0.1px;
+  font-size: 36px;
+}
+
+@media screen and (max-width:599px) {
+  #myCanvas {
+    width: 100%;
+  }
+
+  .kaitoubutton_con {
+    width: 100%;
+  }
+
+  .kaitoubutton {
+    width: 10.65%;
+    font-size: 16px;
+    line-height: 50px;
+    border-width: 0.1px;
+  }
+}
