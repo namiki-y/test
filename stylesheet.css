@@ -13,6 +13,11 @@
   border: solid;
   border-width: 0.1px;
   font-size: 36px;
+  cursor: pointer;
+  -webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 }
 
 @media screen and (max-width:599px) {
