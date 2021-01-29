@@ -28,6 +28,8 @@ function kekka(){
   x = canvasWidth/2 - w/2;
   y =canvasHeight/2;
   ctx.fillText(scoreAll,x,y);
+  
+  myCanvas.addEventListener("click",function(){window.location.reload();})
 }
 
 function kekka2(){
