@@ -169,6 +169,7 @@ function kenshou3(num){
   //正解
   if (mondai3[kaitoutyuu3].a == num) {
     score3++;
+    ctx.font = "40px 'Arial'";
     s = "○";
     x = (mondai3[kaitoutyuu3].n%10)*45+5;
     y = Math.floor(mondai3[kaitoutyuu3].n/10)*90+86;
