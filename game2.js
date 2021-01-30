@@ -109,16 +109,28 @@ class Mondai2 {
     this.c = c;
     this.hc = hc;
     this.s = 50;
+    do {
+      this.haikei = rand(1,5)
+    } while (this.haikei==this.c);
   }
 
   draw(){
     ctx.font = "bold 100px 'Arial'"
 
+    //背景色
+    if (this.haikei==1) ctx.fillStyle = "red";
+    else if (this.haikei==2) ctx.fillStyle = "blue";
+    else if (this.haikei==3) ctx.fillStyle = "yellow";
+    else if (this.haikei==4) ctx.fillStyle = "green";
+    else ctx.fillStyle = "black";
+
+    ctx.fillRect(0,0,canvasWidth,canvasHeight);
+
     //文字自体の色
-    if (this.c==1) ctx.fillStyle = "red"
-    else if (this.c==2) ctx.fillStyle = "blue"
-    else if (this.c==3) ctx.fillStyle = "yellow"
-    else if (this.c==4) ctx.fillStyle = "green"
+    if (this.c==1) ctx.fillStyle = "red";
+    else if (this.c==2) ctx.fillStyle = "blue";
+    else if (this.c==3) ctx.fillStyle = "yellow";
+    else if (this.c==4) ctx.fillStyle = "green";
     else ctx.fillStyle = "black"
 
     //書いてある文字
