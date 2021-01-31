@@ -35,7 +35,7 @@ function game2() {
   mondai2[0].draw();
 
   kaitou2();
-  timer2 = setInterval(time2,150);
+  timer2 = setInterval(time2,100);
 }
 
 //スタート画面
@@ -95,6 +95,12 @@ function gameOver2(){
   w = ctx.measureText(s).width;
   x = canvasWidth/2 - w/2;
   y =150;
+  ctx.fillText(s,x,y);
+  
+  s = "NEXT ≫";
+  w = ctx.measureText(s).width;
+  x = canvasWidth/2 - w/2;
+  y =350;
   ctx.fillText(s,x,y);
 
   canvas.addEventListener("click",start3);
