@@ -71,6 +71,12 @@ function gameOver4(){
   x = canvasWidth/2 - w/2;
   y =150;
   ctx.fillText(s,x,y);
+  
+  s = "NEXT ≫";
+  w = ctx.measureText(s).width;
+  x = canvasWidth/2 - w/2;
+  y =350;
+  ctx.fillText(s,x,y);
 
   canvas.addEventListener("click",start5);
 }
